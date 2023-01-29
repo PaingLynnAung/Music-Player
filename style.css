@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #3498db;
+}
+
+.wapper{
+    width: 100%;
+    height: 100vh;
+    background-color: #3498db;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 1em;
+}
+
+.card{
+    width: 250px;
+    height: 18em;
+    background-color: white;
+    display: grid;
+    place-items: center;
+}
+
+.border-radius-dotted{
+    width: 70px;
+    aspect-ratio: 1/1;
+    border : 1px dashed black;
+    display: grid;
+    place-items: center;
+    border-radius: 50px;
+    border-color: #3498db;
+
+}
+
+.fa-plus{
+    font-size: 25px;
+    color: #3498db;
+}
+
+.card span{
+    color: #3498db;
+    top: -25px;
+    position: relative;
+    overflow: hidden;
+}
+
+.typing-box{
+    width: 400px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    visibility: hidden;
+    z-index: 10000;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1em;
+    
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.37);
+}
+.alert{
+    margin: auto;
+    color: red;
+    display: none;
+    /* visibility: hidden; */
+    margin-top: .5em;
+}
+.inputs-form{
+    padding: 0 1em 0 1em;
+    
+}
+.title,.description{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+}
+
+.title input{
+    height: 2.5em;
+    outline: none;
+    border: none;
+    box-shadow: 0 0 1px black;
+}
+.description textarea{
+    resize: none;
+    outline: none;
+    border: none;
+    box-shadow: 0 0 1px black;
+    
+}
+.add-note-btn{
+    width: 100%;
+    height: 3em;
+    border: none;
+    margin-top: 2em;
+    background-color: #3498db;
+}
+
+#note-section{
+    background-color: white;
+    overflow-y: scroll;
+    position: relative;
+    height: 18em;
+    width: 250px;
+    padding-left: 2px;
+}
+
+#note-section::-webkit-scrollbar{
+    display: none;
+}
+
+
+.note-header-container{
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background-color: #f0890bc4;
+    color: white;
+    z-index: 11;
+    align-items: center;
+}
+.more{
+    margin-right: 4px;
+}
+.more div{
+    width: 7px;
+    height: 7px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.date-container{
+    margin: auto;
+    margin-bottom: 4px;
+}
+
+.dropdown-container{
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    width: 4em;
+    position: absolute;
+    top: 1.7em;
+    right: 0em;
+    z-index: 12;
+}
+.drop{
+   visibility: hidden;
+}
+
+.dropdown-container button{
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    
+}
+
+
